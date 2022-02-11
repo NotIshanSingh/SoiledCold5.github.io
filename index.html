@@ -1,82 +1,17 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8" />
-  <title>Cat Walk</title>
- </head>
- <body>
+<style>
+  p {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue';
+    font-size: 50px;
+  }
   
-  <button id="start-button">Start</button>
-  <button id="speed-button">Go Faster!</button>
-  <button id="stop-button">Stop</button>
-  <div id="info"></div>
+  h1 {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue';
+    font-size: 70px;
+  }
   
-  <img style="position:absolute; left: 0px; top: 80px;" src='http://www.anniemation.com/clip_art/images/cat-walk.gif'>
-
-  <script>
-var movePixels = 10;
-var delayMs = 50;
-var catTimer = null;
-var img = document.getElementsByTagName('img')[0];
-var walkForwards = true;
-function catWalk() {
-  var currentLeft = parseInt(img.style.left);
-  if (walkForwards && (currentLeft > (window.innerWidth - img.width))) {
-    walkForwards = false;
-  }
-  if (!walkForwards && (currentLeft <= 0)) {
-    walkForwards = true;
-  }
-  if (walkForwards) {
-    img.style.left = (currentLeft + movePixels) + 'px';
-  } else {
-    img.style.left = (currentLeft - movePixels) + 'px';
-  }
-  if ((currentLeft > (window.innerWidth / 2 - (img.width / 2))) && (currentLeft < (window.innerWidth / 2 - (img.width / 2) + 15))) {
-    dancingCat();
-    window.setTimeout(stopDancingCat, 5000);
-  }
-  /*
-  if (currentLeft > (window.innerWidth - img.width)) {
-    img.style.left = '0px';
-  }
-  */
-}
-function startCatWalk() {
-  catTimer = window.setInterval(catWalk, delayMs);
-}
-function speedCat() {
-  movePixels = movePixels + (movePixels * 0.5);
-}
-function onStartClick() {
-	startCatWalk();
-}
-var startButton = document.getElementById('start-button');
-startButton.addEventListener('click', onStartClick);
-
-function onStopClick() {
-	window.clearInterval(catTimer);
-}
-function onSpeedClick() {
-  speedCat();
-}
-var speedButton = document.getElementById('speed-button');
-speedButton.addEventListener('click', onSpeedClick);
-
-function dancingCat() {
-  img.src = ('http://eaxan.mobile9.com/download/media/210/cat-dance_cbsoxfnm.gif');
-  movePixels = 0;
-}
-function stopDancingCat() {
-  img.src = ('http://www.anniemation.com/clip_art/images/cat-walk.gif');
-  currentLeft = parseInt(img.style.left);
-  movePixels = 10;
-}
-var stopButton = document.getElementById('stop-button');
-stopButton.addEventListener('click', onStopClick);
-
-
-  </script>
-
- </body>
-</html>
+  body { background: url("https://images-ext-2.discordapp.net/external/otz4NaTuwlREuJf8yw_62Q3zh71Kp8h--_CYrx8lAho/https/i.pinimg.com/originals/7e/1a/c1/7e1ac12bc20d2d6d73a66e77d90e25e9.jpg") }
+</style>
+<h1>DORA THE EXLORA!!1!1!1!!11</h1>
+<p>https://discord.gg/2TPwEtN | DORA THE EXPLORA FANS MUST UNITE AGAIN<p>
+<img src="https://images-ext-1.discordapp.net/external/rRn3pz-hZU9lCTmO3J6o-ZUdHv895W0D4HCXDG4uWBk/%3Fwidth%3D170%26height%3D300/https/media.discordapp.net/attachments/440199347242795010/444511805226876928/image.png">
+<p><a href="https://github.com/dorasquad/dorasquad.github.io/">GitHub</a> | <a href="/join">Discord</a></p>
